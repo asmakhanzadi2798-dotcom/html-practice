@@ -1,14 +1,144 @@
-body {
-    background-color: lightblue;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #111;
+    color: white;
+}
+
+header {
+    background: #080808;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    color: white;
+    font-size: 27px;
+}
+
+header span, .hero span {
+    color: #ff4b2b;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #ff4b2b;
+}
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    background: linear-gradient(90deg, #111, #292020);
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff4b2b;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #d92d10;
+}
+
+.about, .services, .contact {
+    padding: 75px 10%;
     text-align: center;
 }
 
-h1 {
-    color: blue;
+.about p {
+    color: #ccc;
+    margin-top: 20px;
+    line-height: 1.7;
 }
 
-p {
-    color: darkblue;
-    font-size: 20px;
+h2 {
+    margin-bottom: 25px;
 }
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #242424;
+    padding: 35px 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.card h3 {
+    color: #ff4b2b;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #ccc;
+}
+
+.contact {
+    background: #222;
+}
+
+.contact p {
+    margin-bottom: 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #080808;
+    color: #aaa;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+}
+
